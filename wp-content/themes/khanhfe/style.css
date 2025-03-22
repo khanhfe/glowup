@@ -1,0 +1,109 @@
+/*
+    Theme Name: khanhfe
+    Theme URI: https://khanhtre.vn
+    Author: khanhfe
+    Author URI: https://khanhtre.vn
+    Description: Theme developed by khanhtre.vn
+    Version: 1.0
+    Text Domain: corex
+    Tags: khanhfe, khanhtre.vn
+*/
+.color-white {
+  color: #fff;
+}
+
+.header .middle-header {
+  background: #000;
+}
+
+.header .middle-header .header-contact,
+.header .middle-header .header-contact ul li .text a {
+  color: #fff;
+}
+
+.header .middle-header .header-contact ul li .icon img {
+  filter: grayscale(1) brightness(100);
+}
+
+#quick-view-product .product-info .product-description {
+  max-height: 300px;
+  overflow: auto;
+  margin-bottom: 16px;
+}
+
+#popup-cart-desktop .cartpopup {
+  padding: 24px 20px 20px !important;
+}
+
+#popup-cart-desktop .cartpopup .sub-head {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group .form-control {
+  min-height: auto;
+  border-radius: 0;
+}
+
+.form-group textarea.form-control {
+  height: 120px;
+}
+
+.form-group.invalid .form-control {
+  border-color: #bd0000;
+}
+
+.cart__btn-proceed-checkout-dt {
+  text-align: right;
+}
+
+#popup-cart-desktop .cartpopup .ajaxcart__footer .cart__btn-proceed-checkout-dt button {
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  #quick-view-product .quick-view-product {
+    height: 80vh;
+    overflow: auto;
+  }
+  #quick-view-product .quick-view-product .image-block img{
+    height: 200px;
+    margin: auto;
+    display: block;
+  }
+  #quick-view-product .quick-view-product .button_actions {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    background: #fff;
+    left: 0;
+  }
+
+  .cart__btn-proceed-checkout-dt {
+    text-align: center;
+  }
+
+  #popup-cart-desktop .cartpopup .ajaxcart__footer .cart__btn-proceed-checkout-dt button {
+    max-width: unset;
+  }
+
+}
+
+.form-response.success {
+  color: #00a651;
+}
+
+#popup-cart-desktop .header-popcart .cart_btn-close {
+  top: -30px !important;
+  right: -30px !important;
+}
