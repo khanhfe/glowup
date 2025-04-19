@@ -29,20 +29,6 @@ $flashsale = isset($product['is_flash_sale']) ? $product['is_flash_sale'] : fals
             </div>
         </a>
         <div class="lofi-mybints">
-            <div class="action-cart action-child">
-                <button class="btn-buy btn-views add_to_cart addcart" title="Mua ngay">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 17" fill="none">
-                        <circle cx="9" cy="15.7368" r="1.26316" fill="#000"></circle>
-                        <circle cx="14.0526" cy="15.7368" r="1.26316" fill="#000"></circle>
-                        <path d="M2.68421 6.05273L1.8421 6.05273" stroke="#000" stroke-width="1.5" stroke-linecap="round"></path>
-                        <path d="M3.52631 11.1055L2.6842 11.1055" stroke="#000" stroke-width="1.5" stroke-linecap="round"></path>
-                        <path d="M3.52632 8.5791L1 8.5791" stroke="#000" stroke-width="1.5" stroke-linecap="round"></path>
-                        <path d="M5.01003 3.94737L6.72226 11.6163C6.87534 12.3019 7.48373 12.7895 8.18622 12.7895H14.6659C15.3684 12.7895 15.9768 12.3019 16.1299 11.6163L17.4342 5.77422C17.6435 4.83706 16.9305 3.94737 15.9703 3.94737H14.6341H12.7895M5.01003 3.94737L4.50902 2.10616C4.33133 1.45315 3.73839 1 3.06164 1H1M5.01003 3.94737H8.21804H9.42105" stroke="#000" stroke-width="1.5" stroke-linecap="round">
-                        </path>
-                    </svg>
-                    <span class="action-name">Mua ngay</span>
-                </button>
-            </div>
             <div class="quickview action-child">
 				<button title="Xem nhanh" class="quick-view btn-views">
 					<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,16 +51,7 @@ $flashsale = isset($product['is_flash_sale']) ? $product['is_flash_sale'] : fals
             </div>
         </div>
     </div>
-    <?php if ($flashsale): ?>
-        <div class="flashsale__bottom" style="display:none">
-            <div class="flashsale__label">
-                <b class="flashsale__sold-qty"></b> sản phẩm đã bán
-            </div>
-            <div class="flashsale__progressbar">
-                <div class="flashsale___percent"></div>
-            </div>
-        </div>
-    <?php endif; ?>
+    
     <div class="d-none product-description">
         <?= isset($product['description']) ? $product['description'] : '' ?>
     </div>

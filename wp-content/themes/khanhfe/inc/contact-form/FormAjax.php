@@ -29,7 +29,11 @@ class FormCommon
 
     public static function security()
     {
-        wp_nonce_field('form_submit', 'contact_nonce');
+        if (function_exists('esi_nonce_action')) {
+            esi_nonce_action('form_submit', 'contact_nonce', true);
+        } else {
+            wp_nonce_field('form_submit', 'contact_nonce');
+        }
     }
 
     public function enqueue()

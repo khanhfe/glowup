@@ -14,7 +14,7 @@ function custom_mail_smtp_server($phpmailer)
     $phpmailer->Host = 'smtp.gmail.com';
     $phpmailer->SMTPAuth = true; // Force it to use Username and Password to authenticate
     $phpmailer->Port = 587;
-    $phpmailer->Username = ' khanhfe.dev@gmail.com';
+    $phpmailer->Username = 'khanhfe.dev@gmail.com';
     $phpmailer->Password = 'vgxuqzldntoxonir';
     $phpmailer->SMTPSecure = "tls"; // Choose SSL or TLS, if necessary for your server
     $phpmailer->From = ' khanhfe.dev@gmail.com';

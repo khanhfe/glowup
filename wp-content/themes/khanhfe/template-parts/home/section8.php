@@ -25,7 +25,7 @@ $testimonials = isset($h_section8['testimonials']) ? $h_section8['testimonials']
                                             <div class="swiper-slide">
                                                 <div class="testimonial">
                                                     <div class="pic">
-                                                        <img width="100" height="100" class="lazy" src="<?= PLACEHOLDER ?>" data-src="<?= $iamge['url'] ?>" alt="<?= $image['alt'] ?>" />
+                                                        <img width="100" height="100" class="lazy" src="<?= PLACEHOLDER ?>" data-src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>" />
                                                     </div>
                                                     <p class="description"><?= $description ?></p>
                                                     <h3 class="title"><?= $name ?></h3>
