@@ -122,15 +122,15 @@ function wp_paginate_paged($custom_query = null, $paged = null)
     $paged = ($paged) ? $paged : get_query_var('paged');
     $big = 999999999;
     $total = isset($main_query->max_num_pages) ? $main_query->max_num_pages : '';
-    if ($total > 1) echo '<div class="paginate_links">';
+    if ($total > 1) echo '<div class="paginate_links pagination clearfix">';
     echo paginate_links(array(
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
         'current' => max(1, $paged),
         'total' => $total,
         'mid_size' => '10',
-        'prev_text'    => __('<', 'devvn'),
-        'next_text'    => __('>', 'next'),
+        'prev_text'    => __('«', 'devvn'),
+        'next_text'    => __('»', 'next'),
     ));
     if ($total > 1) echo '</div>';
 }

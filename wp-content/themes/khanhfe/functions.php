@@ -21,6 +21,7 @@ define('FACEBOOK_APP_ID', '');
 define('PLACEHOLDER', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC');
 
 require_once('inc/Optimize.php');
+require_once('inc/Paginate.php');
 require_once('inc/Admin.php');
 require_once('inc/Menu.php');
 require_once('inc/contact-form/FormAjax.php');
@@ -100,4 +101,3 @@ if (!function_exists('get_field')) {
         return '';
     }
 }
-
